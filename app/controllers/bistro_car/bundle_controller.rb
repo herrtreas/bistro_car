@@ -1,5 +1,5 @@
 class BistroCar::BundleController < ActionController::Base
-  caches_page :show
+  caches_page :show if Rails.env == :production
 
   def show
     headers['Content-Type'] = "application/javascript"
