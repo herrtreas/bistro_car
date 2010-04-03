@@ -6,11 +6,6 @@ module BistroCar
       end.join
       bundles.html_safe
     end
-
-    def coffee_script(&block)
-      output = BistroCar.compile(capture(&block))
-      content_tag(:script, output, :type => 'text/javascript', :charset => 'utf-8')
-    end
   end
 end
 
