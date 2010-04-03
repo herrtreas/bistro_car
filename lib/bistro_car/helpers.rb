@@ -4,7 +4,7 @@ module BistroCar
       bundles = [:default, *bundles].map do |name|
         content_tag(:script, '', :src => url_for("/javascripts/bundle/#{name}.js"), :type => 'text/javascript', :charset => 'utf-8')
       end.join
-      bundles.html_safe!
+      bundles.html_safe
     end
 
     def coffee_script(&block)
