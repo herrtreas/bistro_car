@@ -19,7 +19,7 @@ module BistroCar
     end
 
     def to_javascript
-      file = Tempfile.new('script.coffee', 'w') do |file|
+      file = Tempfile.new('script.coffee') do |file|
         sources.each do |source|
           file << File.read(source)
           file << "\n"
