@@ -35,7 +35,7 @@ You can set this for the entire application:
 You're encouraged to create only a single bundle, but sometimes you might find it useful/necessary to create multiple bundles for different parts of your application. In that case you can create a directory structure like this:
 
     + app
-      + scripts
+      + coffeescripts
         + admin
           - admin.coffee
           - other_admin.coffee
