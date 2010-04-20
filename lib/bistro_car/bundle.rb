@@ -15,7 +15,7 @@ module BistroCar
     end
 
     def sources
-      Dir.glob(path.join('*.coffee')).to_a
+      Dir.glob(path.join('*.coffee').to_s).to_a
     end
 
     def to_javascript
