@@ -9,4 +9,4 @@ module BistroCar
   end
 end
 
-ActionView::Base.send(:include, BistroCar::Helpers)
+ActionController::Base.helper(BistroCar::Helpers)
